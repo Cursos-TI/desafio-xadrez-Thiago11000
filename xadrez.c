@@ -2,6 +2,99 @@
 #include <stdlib.h>
 #include <time.h>
 
+//  Torre
+
+void moverTorre(int casas) {
+    if (casas > 0)
+    {
+        printf("Direita\n");
+        moverTorre(casas - 1);
+    }    
+}
+void moverTorre2(int casas2) {
+    if (casas2 > 0)
+    {
+        printf("Esquerda\n");
+        moverTorre2(casas2 - 1);
+    }    
+}
+void moverTorre3(int casas3) {
+    if (casas3 > 0)
+    {
+        printf("Cima\n");
+        moverTorre3(casas3 - 1);
+    }    
+}
+void moverTorre4(int casas4) {
+    if (casas4 > 0)
+    {
+        printf("Baixo\n");
+        moverTorre4(casas4 - 1);
+    }    
+}
+
+// Rainha
+
+void moverRainha(int casa) {
+    if (casa > 0)
+    {
+        printf("Direita\n");
+        moverRainha(casa - 1);
+    }    
+}
+void moverRainha2(int casa2) {
+    if (casa2 > 0)
+    {
+        printf("Esquerda\n");
+        moverRainha2(casa2 - 1);
+    }    
+}
+void moverRainha3(int casa3) {
+    if (casa3 > 0)
+    {
+        printf("Cima\n");
+        moverRainha3(casa3 - 1);
+    }    
+}
+void moverRainha4(int casa4) {
+    if (casa4 > 0)
+    {
+        printf("Baixo\n");
+        moverRainha4(casa4 - 1);
+    }    
+}
+
+//Bispo
+
+void moverBispo(int CASA) {
+    if (CASA > 0)
+    {
+        printf("Direita\n");
+        moverBispo(CASA - 1);
+    }    
+}
+void moverBispo2(int CASA2) {
+    if (CASA2 > 0)
+    {
+        printf("Esquerda\n");
+        moverBispo2(CASA2 - 1);
+    }    
+}
+void moverBispo3(int CASA3) {
+    if (CASA3 > 0)
+    {
+        printf("Cima\n");
+        moverBispo3(CASA3 - 1);
+    }    
+}
+void moverBispo4(int CASA4) {
+    if (CASA4 > 0)
+    {
+        printf("Baixo\n");
+        moverBispo4(CASA4 - 1);
+    }    
+}
+
 int main() {
     
     int Torre, Bispo, Rainha;
@@ -32,33 +125,25 @@ int main() {
     {
     case 1: 
 
-    for (int i = 0; i <= 5; i++)
-    {
-        printf("Direita \n");
-    }
+    moverTorre(5);
+
         break;
     
     case 2:
 
-    for (int i = 0; i <= 5; i++)
-    {
-        printf("Esquerda \n");
-    }
+    moverTorre2(5);
+
         break;
 
     case 3:
 
-        for (int i = 0; i <= 5; i++)
-    {
-        printf("Cima \n");
-    }
+    moverTorre3(5);
+
         break;
     case 4:
 
-        for (int i = 0; i <= 5; i++)
-    {
-        printf("Baixo \n");
-    }
+    moverTorre4(5);
+
         break;
     }
         break;
@@ -77,45 +162,25 @@ int main() {
     {
     case 1:
 
-    do
-    {
-       printf("Direita \n");
-       i++;
-
-    } while (i <= 8);
+    moverRainha(8);
 
         break;
     
     case 2:
 
-    do
-    {
-       printf("Esquerda \n");
-       i++;
-
-    } while (i <= 8);
+    moverRainha2(8);
 
         break;
 
     case 3:
 
-    do
-    {
-       printf("Cima \n");
-       i++;
-
-    } while (i <= 8);
+    moverRainha3(8);
 
         break;
 
     case 4:
 
-    do
-    {
-       printf("Baixo \n");
-       i++;
-
-    } while (i <= 8);
+    moverRainha4(8);
 
         break;
     }
@@ -136,39 +201,26 @@ int main() {
     {
     case 1:
 
-        while (i <= 5)
-        {
-            printf("Cima, Direita \n");
-            i++;
-        }
+    moverBispo(5);
         
         break;
     
     case 2:
 
-        while (i <= 5)
-        {
-            printf("Cima, Esquerda \n");
-            i++;
-        }
+    moverBispo2(5);
+
         break;
     
     case 3:
 
-        while (i <= 5)
-        {
-            printf("Baixo, Direita \n");
-            i++;
-        }
+    moverBispo3(5);
+
         break;
     
     case 4:
 
-        while (i <= 5)
-        {
-            printf("Baixo, Esquerda \n");
-            i++;
-        }
+    moverBispo4(5);
+
         break;
     }
         break;
